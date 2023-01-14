@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sqlite3.h>
 
-//Robert Vannest, Number: 110039175
+//Robert Vannest
 
 static int callback(void* data, int argc, char** argv, char** ColName){
    
