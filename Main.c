@@ -127,88 +127,89 @@ else {
 	printf("Table created successfully\n");
 	}
 	
-sql = "INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (1, 'Apple Inc', 135405000, 48304000, 153982000, 90146000, 38095000, 20721000, 302083000, 352755000);"\
-"INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (2, 'Microsoft Corporation', 160812000, 107244000, 87389000, 50122000, 34670000, 17556000, 186218000, 359784000);"\
-"INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (3, 'Amazon.com Inc', 131463000, 58662000, 142266000, 469822000, 66315000, 33364000, 282304000, 420549000);"\
-"INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (4, 'Alphabet Inc', 166109000, 116259000, 65979000, 257637000, 146698000, 76033000, 104629000, 358255000);"\
-"INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (5, 'Tesla Inc', 35990000, 21107000, 24611000, 21454000, 5382000, 3292000, 33302000, 74426000);"\
+sql = "INSERT INTO Stock(Id, CompanyName, CurrAssets, Cash, CurrLiabilities, Revenue, GrossProfit, NetIncome, TotLiabilities, TotAssets) VALUES (1, 'Apple Inc', 135405000, 48304000, 153982000, 90146000, 38095000, 20721000, 302083000, 352755000),\
+(2, 'Microsoft Corporation', 160812000, 107244000, 87389000, 50122000, 34670000, 17556000, 186218000, 359784000),\
+(3, 'Amazon.com Inc', 131463000, 58662000, 142266000, 469822000, 66315000, 33364000, 282304000, 420549000),\
+(4, 'Alphabet Inc', 166109000, 116259000, 65979000, 257637000, 146698000, 76033000, 104629000, 358255000),\
+(5, 'Tesla Inc', 35990000, 21107000, 24611000, 21454000, 5382000, 3292000, 33302000, 74426000);"\
 
 
-"INSERT INTO NormalHolders(Id, Name) VALUES (1, 'jane');"\
-"INSERT INTO NormalHolders(Id, Name) VALUES (2, 'joe');"\
-"INSERT INTO NormalHolders(Id, Name) VALUES (3, 'rob');"\
-"INSERT INTO NormalHolders(Id, Name) VALUES (4, 'chris');"\
-"INSERT INTO NormalHolders(Id, Name) VALUES (5, 'james');"\
+"INSERT INTO NormalHolders(Id, Name) VALUES (1, 'jane'),\
+(2, 'joe'),\
+(3, 'rob'),\
+(4, 'chris'),\
+(5, 'james');"\
 
-"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (1, 0.23, 1, 1);"\
-"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (2, 0.68, 2, 2);"\
-"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (3, NULL, 3, 3);"\
-"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (4, NULL, 4, 4);"\
-"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (5, NULL, 5, 5);"\
+"INSERT INTO OutsideControl(Id, QtrDivAmt, StockId, NormalHoldersId) VALUES (1, 0.23, 1, 1),\
+(2, 0.68, 2, 2),\
+(3, NULL, 3, 3),\
+(4, NULL, 4, 4),\
+(5, NULL, 5, 5);"\
 
-"INSERT INTO CEO(Id, Name) VALUES (1, 'Tim Cook');"\
-"INSERT INTO CEO(Id, Name) VALUES (2, 'Satya Nadella');"\
-"INSERT INTO CEO(Id, Name) VALUES (3, 'Andrew Jassy');"\
-"INSERT INTO CEO(Id, Name) VALUES (4, 'Sundar Pichai');"\
-"INSERT INTO CEO(Id, Name) VALUES (5, 'Elon Musk');"\
+"INSERT INTO CEO(Id, Name) VALUES (1, 'Tim Cook'),\
+(2, 'Satya Nadella'),\
+(3, 'Andrew Jassy'),\
+(4, 'Sundar Pichai'),\
+(5, 'Elon Musk');"\
 
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (1, 'Luca Maestri', 'CFO', 1);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (2, 'James Wilson', 'CTO', 1);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (3, 'Mary Demby', 'CIO', 1);"\
+"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (1, 'Luca Maestri', 'CFO', 1),\
+(2, 'James Wilson', 'CTO', 1),\
+(3, 'Mary Demby', 'CIO', 1);"\
 
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (4, 'Amy Hood', 'CFO', 2);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (5, 'Bradford Smith', 'Vice Chairman', 2);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (6, 'Judson Althoff', 'CCO', 2);"\
+"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (4, 'Amy Hood', 'CFO', 2),\
+(5, 'Bradford Smith', 'Vice Chairman', 2),\
+(6, 'Judson Althoff', 'CCO', 2);"\
 
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (7, 'Brian Olsavsky', 'CFO', 3);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (8, 'Werner Vogels', 'CTO', 3);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (9, 'Adam Selipsky', 'CEO of AWS', 3);"\
+"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (7, 'Brian Olsavsky', 'CFO', 3),\
+(8, 'Werner Vogels', 'CTO', 3),\
+(9, 'Adam Selipsky', 'CEO of AWS', 3);"\
 
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (10, 'Ruth Porat', 'CFO', 4);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (11, 'Lawrence Page', 'Co-Founder/Director', 4);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (12, 'Sergey Brin', 'Co-Founder/Director', 4);"\
+"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (10, 'Ruth Porat', 'CFO', 4),\
+(11, 'Lawrence Page', 'Co-Founder/Director', 4),\
+(12, 'Sergey Brin', 'Co-Founder/Director', 4);"\
 
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (13, 'Zachary Kirkhorn', 'CFO', 5);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (14, 'Andrew Baglino', 'VP of Engineering', 5);"\
-"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (15, 'Vaibhav Taneja', 'CAO', 5);"\
+"INSERT INTO ExecManagement(Id, Name, Position, CEOId) VALUES (13, 'Zachary Kirkhorn', 'CFO', 5),\
+(14, 'Andrew Baglino', 'VP of Engineering', 5),\
+(15, 'Vaibhav Taneja', 'CAO', 5);"\
 
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (1, 5020000, 1, 1);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (2, 4000000, 1, 2);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (3, 3000000, 1, 3);"\
+"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (1, 5020000, 1, 1),\
+(2, 4000000, 1, 2),\
+(3, 3000000, 1, 3);"\
 
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (4, 4640000, 2, 4);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (5, 4660000, 2, 5);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (6, 4430000, 2, 6);"\
+"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (4, 4640000, 2, 4),\
+(5, 4660000, 2, 5),\
+(6, 4430000, 2, 6);"\
 
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (7, 163000, 3, 7);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (8, 150000, 3, 8);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (9, 158000, 3, 9);"\
+"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (7, 163000, 3, 7),\
+(8, 150000, 3, 8),\
+(9, 158000, 3, 9);"\
 
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (10, 667000, 4, 10);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (11, 1, 4, 11);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (12, 1, 4, 12);"\
+"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (10, 667000, 4, 10),\
+(11, 1, 4, 11),\
+(12, 1, 4, 12);"\
 
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (13, 301000, 5, 13);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (14, 301000, 5, 14);"\
-"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (15, 200000, 5, 15);"\
+"INSERT INTO InternalControl(Id, Payment, StockId, ExecManagementId) VALUES (13, 301000, 5, 13),\
+(14, 301000, 5, 14),\
+(15, 200000, 5, 15);"\
 
-"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (1, 'James Bell', 1);"\
-"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (2, 'Dina Dublon', 2);"\
-"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (3, 'Keith Alexander', 3);"\
-"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (4, 'Frances Arnold', 4);"\
-"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (5, 'Kimbal Musk', 5);"\
+"INSERT INTO BoardDirectors(Id, Name, CEOId) VALUES (1, 'James Bell', 1),\
+(2, 'Dina Dublon', 2),\
+(3, 'Keith Alexander', 3),\
+(4, 'Frances Arnold', 4),\
+(5, 'Kimbal Musk', 5);"\
 
-"INSERT INTO MajorityHolders(Id, Name) VALUES (1, 'Vanguard Group');"\
-"INSERT INTO MajorityHolders(Id, Name) VALUES (2, 'Vanguard Group');"\
-"INSERT INTO MajorityHolders(Id, Name) VALUES (3, 'Vanguard Group');"\
-"INSERT INTO MajorityHolders(Id, Name) VALUES (4, 'Vanguard Group');"\
-"INSERT INTO MajorityHolders(Id, Name) VALUES (5, 'Vanguard Group');"\
+"INSERT INTO MajorityHolders(Id, Name) VALUES (1, 'Vanguard Group'),\
+(2, 'Vanguard Group'),\
+(3, 'Vanguard Group'),\
+(4, 'Vanguard Group'),\
+(5, 'Vanguard Group');"\
 
-"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (1, 0.23, 1, 1);"\
-"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (2, 0.68, 2, 2);"\
-"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (3, NULL, 3, 3);"\
-"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (4, NULL, 4, 4);"\
-"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (5, NULL, 5, 5);";
+"INSERT INTO MajorityControl(Id, QtrDivAmt, MajorityHoldersId, BoardDirectorsId) VALUES (1, 0.23, 1, 1),\
+(2, 0.68, 2, 2),\
+(3, NULL, 3, 3),\
+(4, NULL, 4, 4),\
+(5, NULL, 5, 5);";
+
 
 //(below insert) execute sql statement
 r = sqlite3_exec(db, sql, NULL, 0, &errMsg);
